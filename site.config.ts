@@ -51,7 +51,7 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '세소식',
+      title: '새소식',
       pageId: '0adf0895b584482688e8d81e415d902b'
     },
     {
@@ -59,7 +59,7 @@ export default siteConfig({
       pageId: '373a8997cfa041059b1aad9150e701ef'
     },
     {
-      title: '세소식',
+      title: '서비스',
       pageId: 'dd95b6d843f344689266489efa4c337d'
     },
     {
