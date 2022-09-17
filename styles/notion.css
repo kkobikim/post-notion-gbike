@@ -80,6 +80,7 @@
 .notion-gallery-grid .notion-collection-card-property {
   white-space: unset;
   text-overflow: unset;
+  padding: 0;
 }
 .notion-gallery-grid .notion-property-date{
   font-size: 1.2em;
@@ -87,7 +88,8 @@
 }
 .notion-gallery-grid .notion-property-text {
   font-size: 1.4em;
-  font-weight: 200;
+  font-weight: 300;
+  color: var(--fg-color-3);
   line-height:
 }
 .notion-collection {
@@ -468,7 +470,8 @@ background: none;
 padding:0;
 font-size:15px;
 letter-spacing: -0.2px;
-font-weight: 100;
+font-weight: 400;
+color: var(--fg-color-2);
 }
 
 .notion-block-319597a85c784410addf43ceb8d98e52 .notion-title {
@@ -518,4 +521,15 @@ padding-right: calc(min(96px, 8vw));
 
 .dark-mode {
   --fg-logo: url(/gcooter-white.svg)
+}
+
+.notion-block-67ed9de9e26b4158b4277283fbed0b12{
+  text-align: center;
+  color:var(--fg-color-3);
+  font-size: 20px;
+  font-weight: 400;
+}
+.notion-block-319597a85c784410addf43ceb8d98e52 .notion-title{
+  margin: 0;
+  font-size: 35px;
 }
