@@ -6,6 +6,8 @@
  * whereas our goal with this site is to adjust Notion's styling in a few key
  * places to add some flare.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
 
  .notion {
   --notion-max-width: 700px;
@@ -24,6 +26,15 @@
 
 .notion-text {
   padding: 0.5em 2px;
+  font-size: 11pt;
+  letter-spacing: .8px;
+  line-height: 22pt;
+  word-wrap: break-word;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+.notion b {
+  font-weight: 400;
 }
 
 .notion-asset-caption {
@@ -173,6 +184,7 @@
 .notion-h2,
 .notion-h3 {
   margin-bottom: 0.25em;
+  
 }
 
 .notion-callout {
@@ -243,6 +255,10 @@
 .notion-title {
   display: block;
   text-align: center;
+}
+
+.notion-title {
+font-family: 'Nanum Myeongjo', serif;
 }
 
 .notion-collection-row {
@@ -594,4 +610,13 @@ padding-right: calc(min(96px, 8vw));
 .notion-page-content-has-aside .notion-aside {
   display: none;
 }
+}
+
+.notion-h3 {
+  margin-bottom: 0.25em;
+  letter-spacing: .8px;
+  line-height: 22pt;
+  word-wrap: break-word;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
 }
