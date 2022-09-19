@@ -528,13 +528,6 @@ padding-right: calc(min(96px, 8vw));
   padding-right: calc(min(96px, 8vw));
 }
 
-
-
-.notion-aside{
-  padding-left:50px;
-  padding-right:20px;
-  max-width: 300px;
-}
 .notion-table-of-contents-item-body{
   word-break: keep-all;
 }
@@ -590,4 +583,15 @@ padding-right: calc(min(96px, 8vw));
   min-height: auto !important;
   max-height: auto !important;
   margin: 0 !important;
+}
+
+.searchInput {
+  color: var(--fg-color);
+  caret-color: var(--fg-color);
+}
+
+@media (min-width: 1300px) and (min-height: 300px) {
+.notion-page-content-has-aside .notion-aside {
+  display: none;
+}
 }
