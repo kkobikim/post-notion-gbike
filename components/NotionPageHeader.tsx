@@ -84,7 +84,7 @@ export const NotionPageHeader: React.FC<{
       </div>
       <div className="notion-nav-bar">
       <ProgressBar
-  color="#000"
+  color="var(--fg-color-4)"
   height={3}
   position="bottom"
 />
