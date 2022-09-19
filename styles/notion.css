@@ -42,6 +42,7 @@
 .notion-header .notion-nav-header {
   max-width: 1000px;
   margin: 0 auto;
+  
 }
 .notion-nav-header-logo {
     width: 158px;
@@ -481,30 +482,53 @@ color: var(--fg-color-2);
 .notion-block-319597a85c784410addf43ceb8d98e52 .notion-collection-header {
   display: none;
 }
+
+.notion-block-319597a85c784410addf43ceb8d98e52 .notion-page {
+  --notion-max-width: 1100px;
+  
+  padding-left: calc(min(96px, 8vw));
+  padding-right: calc(min(96px, 8vw));
+  
+}
+
 .notion-block-0adf0895b584482688e8d81e415d902b .notion-page {
 --notion-max-width: 1100px;
 
 padding-left: calc(min(96px, 8vw));
 padding-right: calc(min(96px, 8vw));
+
 }
+
 .notion-block-373a8997cfa041059b1aad9150e701ef .notion-page {
   --notion-max-width: 1100px;
   
   padding-left: calc(min(96px, 8vw));
   padding-right: calc(min(96px, 8vw));
-  }
+}
+
+.notion-block-dd95b6d843f344689266489efa4c337d .notion-page {
+  --notion-max-width: 1100px;
+  
+  padding-left: calc(min(96px, 8vw));
+  padding-right: calc(min(96px, 8vw));
+}
+
 .notion-block-e7af798c90df42aebc1d6bd18d9d472f .notion-page {
 --notion-max-width: 1100px;
 
 padding-left: calc(min(96px, 8vw));
 padding-right: calc(min(96px, 8vw));
 }
+
 .notion-block-25772071fcdb44328dd1c2d9e3a1f18c .notion-page {
   --notion-max-width: 1100px;
   
   padding-left: calc(min(96px, 8vw));
   padding-right: calc(min(96px, 8vw));
-  }
+}
+
+
+
 .notion-aside{
   padding-left:50px;
   padding-right:20px;
@@ -533,3 +557,30 @@ padding-right: calc(min(96px, 8vw));
   margin: 0;
   font-size: 35px;
 }
+
+.notion-block-319597a85c784410addf43ceb8d98e52 .notion-nav-bar {
+  display: none;
+  
+}
+
+.notion-block-0adf0895b584482688e8d81e415d902b .notion-nav-bar {
+  display: none;
+
+}
+
+.notion-block-373a8997cfa041059b1aad9150e701ef .notion-nav-bar {
+  display: none;
+}
+
+.notion-block-dd95b6d843f344689266489efa4c337d .notion-nav-bar {
+  display: none;
+}
+
+.notion-block-e7af798c90df42aebc1d6bd18d9d472f .notion-nav-bar {
+  display: none;
+}
+
+.notion-block-25772071fcdb44328dd1c2d9e3a1f18c .notion-nav-bar {
+  display: none;
+}
+
