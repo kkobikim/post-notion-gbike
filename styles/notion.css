@@ -8,13 +8,14 @@
  */
 
  .notion {
-  --notion-max-width: 720px;
+  --notion-max-width: 700px;
   --notion-header-height: 54px;
 }
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
+  padding:0;
 }
 
 .index-page {
