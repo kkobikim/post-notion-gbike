@@ -220,9 +220,29 @@
   .notion-collection {
     margin-top: 10px;
 }
+
+.notion-header .notion-nav-header {
+  display: flex;
+  flex-direction: column;
+  padding-top:15px;
+  padding-bottom:20px;
+  height: auto;
+}
+
+.notion-header:{
+  height: 100px;
+}
+.notion-nav-header-logo {
+  
+ }
+ .notion-header .breadcrumbs {
+  float:left;
+ }
+ .notion{
+  --notion-header-height: 94px;
+ }
 .notion-collection-card div:nth-child(1) { order: 1; }
 .notion-collection-card div:nth-child(2) { order: 2; }
-
 .notion-collection-card-body div:nth-child(1) { order: 2; }
 .notion-collection-card-body div:nth-child(2) { order: 4; }
 .notion-collection-card-body div:nth-child(3) { order: 3; }
@@ -255,10 +275,15 @@
 .notion-title {
   display: block;
   text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 34px;
+  margin-bottom: 0;  
+
 }
 
 .notion-title {
 font-family: 'Nanum Myeongjo', serif;
+font-size: 34px;  
 }
 
 .notion-collection-row {
@@ -288,6 +313,10 @@ font-family: 'Nanum Myeongjo', serif;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100% !important;
+  height: auto !important;
+  min-height: auto !important;
+  max-height: auto !important;
 }
 
 .notion-page-cover-wrapper {
@@ -453,6 +482,7 @@ font-family: 'Nanum Myeongjo', serif;
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: saturate(180%) blur(16px);
   border-bottom: 1px solid var(--bg-color-0);
+  
 }
 
 .dark-mode .notion-header {
