@@ -207,9 +207,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .notion-search-button {
+  .notion-nav-header {
     display: none !important;
   }
+
   .notion-collection-card-cover {
     height: auto;
   }
@@ -221,21 +222,26 @@
     margin-top: 10px;
 }
 
-.notion-header .notion-nav-header {
+.notion-header .notion-nav-header-m {
   display: flex;
   flex-direction: column;
-  padding-top:15px;
-  padding-bottom:20px;
+  padding: 15px 12px 20px 12px;
   height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .notion-header:{
   height: 100px;
 }
-.notion-nav-header-logo {
-  
+.notion-nav-header-logo-m {
+  width: 158px;
+  height: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: var(--fg-logo);
  }
- .notion-header .breadcrumbs {
+ .notion-header .breadcrumbs-m {
   float:left;
  }
  .notion{
@@ -634,6 +640,10 @@ padding-right: calc(min(96px, 8vw));
 .searchInput {
   color: var(--fg-color);
   caret-color: var(--fg-color);
+}
+
+.notion-nav-header-m {
+  display: none;
 }
 
 @media (min-width: 1300px) and (min-height: 300px) {

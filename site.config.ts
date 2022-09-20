@@ -69,6 +69,10 @@ export default siteConfig({
     {
       title: '창업',
       pageId: '25772071fcdb44328dd1c2d9e3a1f18c'
+    },
+    {
+      title: '보도자료',
+      pageId: '478e2a5d829844938e517cbf7a665940'
     }
   ]
 })

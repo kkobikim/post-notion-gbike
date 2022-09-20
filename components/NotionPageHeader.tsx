@@ -82,6 +82,47 @@ export const NotionPageHeader: React.FC<{
          
         </div>
       </div>
+
+
+      <div className='notion-nav-header-m'>
+        
+        <div className='notion-nav-header-logo-m' onClick={() => location.href='../'}></div>
+ 
+
+        <div className='notion-nav-header-rhs breadcrumbs-m'>
+          {navigationLinks
+            ?.map((link, index) => {
+              if (!link.pageId && !link.url) {
+                return null
+              }
+
+              if (link.pageId) {
+                return (
+                  <components.PageLink
+                    href={mapPageUrl(link.pageId)}
+                    key={index}
+                    className={cs(styles.navLink, 'breadcrumb', 'button')}
+                  >
+                    {link.title}
+                  </components.PageLink>
+                )
+              } else {
+                return (
+                  <components.Link
+                    href={link.url}
+                    key={index}
+                    className={cs(styles.navLink, 'breadcrumb', 'button')}
+                  >
+                    {link.title}
+                  </components.Link>
+                )
+              }
+            })
+            .filter(Boolean)}
+         
+        </div>
+      </div>
+
       <div className="notion-nav-bar">
       <ProgressBar
   color="var(--fg-color-4)"
