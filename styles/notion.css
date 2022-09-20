@@ -103,7 +103,6 @@
   font-size: 1.4em;
   font-weight: 300;
   color: var(--fg-color-3);
-  line-height:
 }
 .notion-collection {
   margin-top:80px;
@@ -231,7 +230,7 @@
   margin: 0 auto;
 }
 
-.notion-header:{
+.notion-header {
   height: 100px;
 }
 .notion-nav-header-logo-m {
@@ -660,3 +659,4 @@ padding-right: calc(min(96px, 8vw));
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
 }
+
