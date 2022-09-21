@@ -63,16 +63,12 @@ export default siteConfig({
       pageId: 'dd95b6d843f344689266489efa4c337d'
     },
     {
-      title: '언론뉴스',
-      pageId: 'e7af798c90df42aebc1d6bd18d9d472f'
+      title: '보도자료',
+      pageId: '478e2a5d829844938e517cbf7a665940'
     },
     {
       title: '창업',
       pageId: '25772071fcdb44328dd1c2d9e3a1f18c'
-    },
-    {
-      title: '보도자료',
-      pageId: '478e2a5d829844938e517cbf7a665940'
     }
   ]
 })
