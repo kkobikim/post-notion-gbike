@@ -745,6 +745,7 @@ padding-right: calc(min(96px, 8vw));
   font-weight: 400;
   color: var(--fg-color-3);
   padding-bottom: 25px;
+
 }
 
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card div:nth-child(1) { order: 1; }
@@ -778,7 +779,7 @@ padding-right: calc(min(96px, 8vw));
   box-shadow: none;
   border-radius: 20px;
   place-items: center;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 30px 20px 30px;
 }
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card-body{
   place-items: center;
