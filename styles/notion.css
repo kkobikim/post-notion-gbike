@@ -760,9 +760,8 @@ padding-right: calc(min(96px, 8vw));
 .notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-collection-card-body div:nth-child(2) { order: 3; }
 .notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-collection-card-body div:nth-child(3) { order: 1; }
 
-.notion-block-3aee5ae111324d76a994670879902f1e .notion-nav-bar {
+.notion-block-3aee5ae111324d76a994670879902f1e {
   display: none;
-  
 }
 
 /** 모아보기 작가 css **/
