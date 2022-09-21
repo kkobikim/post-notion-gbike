@@ -14,6 +14,10 @@
   --notion-header-height: 54px;
 }
 
+.notion > * {
+  padding: 0;
+}
+
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
@@ -660,3 +664,167 @@ padding-right: calc(min(96px, 8vw));
   font-weight: 400;
 }
 
+
+
+
+
+
+
+
+
+/** 모아보기 css **/
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-page{
+  --notion-max-width: 1300px;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-page-content-inner {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.5fr;
+  vertical-align: top;
+  grid-gap: 40px;
+  padding: 0 25px 0 25px;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: none;
+  grid-gap: 0px;
+  grid-auto-rows: min-content;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card-body {
+  padding: 20px 0 25px 0;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-collection-card-body {
+  padding: 15px 10px 25px 0;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-96ba03e02f634687939647a66efd7c17 .notion-collection-card-cover{
+  height: 400px;
+}
+@media only screen and (max-width: 600px) {
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-96ba03e02f634687939647a66efd7c17 .notion-collection-card-cover{
+  height: 200px;
+}
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-gallery-grid .notion-page-title-text{
+  font-size: 30px;
+  white-space: unset;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection {
+  align-self: start !important;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-96ba03e02f634687939647a66efd7c17  .notion-gallery-grid {
+  grid-gap: 20px;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-ec795b7094ce4752bf98e7e76ac166a7  .notion-gallery-grid {
+  grid-gap: 20px;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-gallery-grid .notion-page-title-text{
+  font-size: 20px;
+  white-space: unset;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+}
+
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card:hover .notion-collection-card-cover {
+
+  transform: translateY(-10px);
+  transition: all 0.2s ease-out;
+  background:none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-header-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--fg-color-3);
+  padding-bottom: 25px;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card div:nth-child(1) { order: 1; }
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card div:nth-child(2) { order: 2; }
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card-body div:nth-child(1) { order: 2; }
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card-body div:nth-child(2) { order: 4; }
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card-body div:nth-child(3) { order: 3; }
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-collection-card-body div:nth-child(4) { order: 1; }
+
+.notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-collection-card-body div:nth-child(1) { order: 2; }
+.notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-collection-card-body div:nth-child(2) { order: 3; }
+.notion-block-ec795b7094ce4752bf98e7e76ac166a7 .notion-collection-card-body div:nth-child(3) { order: 1; }
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-nav-bar {
+  display: none;
+  
+}
+
+/** 모아보기 작가 css **/
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-gallery-grid {
+  border: 0px;
+  padding-top: 0px;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card {
+  background-color: #27BA65;
+  box-shadow: none;
+  border-radius: 20px;
+  place-items: center;
+  padding: 40px 20px 20px 20px;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card-body{
+  place-items: center;
+  padding: 20px 0 25px 0;
+
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card:hover {
+    transform: translateY(-7px);
+    transition: all 0.2s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card-cover{
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border: 0px;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-gallery-grid .notion-collection-card-property{
+  text-align: center;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-gallery-grid .notion-page-title-text{
+  font-size: 18px;
+  white-space: unset;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fff;
+  line-height: 45px;
+  word-break: keep-all;
+}
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-gallery-grid .notion-property-text {
+  font-size: 15px;
+  white-space: unset;
+  font-weight: 200;
+  letter-spacing: -0.01em;
+  color: #FFFFE9;
+  line-height: 22px;
+  word-break: keep-all;
+}
+
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card:hover .notion-collection-card-cover {
+  background-color: #fff;
+  transform: none;
+  transition: all 0.2s ease-out;
+  box-shadow: none;
+}

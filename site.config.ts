@@ -51,24 +51,16 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '새소식',
+      title: '모아 보기',
+      pageId: '3aee5ae111324d76a994670879902f1e'
+    },
+    {
+      title: '지쿠터 이야기',
       pageId: '0adf0895b584482688e8d81e415d902b'
     },
     {
-      title: '인사이드',
+      title: '세상 이야기',
       pageId: '373a8997cfa041059b1aad9150e701ef'
-    },
-    {
-      title: '서비스',
-      pageId: 'dd95b6d843f344689266489efa4c337d'
-    },
-    {
-      title: '보도자료',
-      pageId: '478e2a5d829844938e517cbf7a665940'
-    },
-    {
-      title: '창업',
-      pageId: '25772071fcdb44328dd1c2d9e3a1f18c'
     }
   ]
 })
