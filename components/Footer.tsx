@@ -11,7 +11,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <embed type="text/html" src="https://rideglide.io/kr/bottom" width="100%" height="488px"></embed>
+      <embed type="text/html" src="https://gcoo.io/kr/bottom" width="100%" height="488px"></embed>
     </footer>
   )
 }
