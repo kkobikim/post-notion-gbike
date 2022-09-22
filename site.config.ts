@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'gbike',
-  domain: 'gbike',
+  name: '지쿠터 블로그',
+  domain: 'blog.gcoo.io',
   author: 'gbike',
 
   // open graph metadata (optional)
-  description: 'gbike',
+  description: '지쿠터 블로그',
 
   // social usernames (optional)
 
