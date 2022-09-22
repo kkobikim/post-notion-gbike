@@ -764,6 +764,10 @@ padding-right: calc(min(96px, 8vw));
   display: none;
 }
 
+.notion-block-3aee5ae111324d76a994670879902f1e .notion-nav-bar {
+  display: none;
+}
+
 /** 모아보기 작가 css **/
 
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-gallery-grid {
