@@ -679,7 +679,7 @@ padding-right: calc(min(96px, 8vw));
 
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-page-content-inner {
   display: grid;
-  grid-template-columns: 0.4fr 1fr 0.5fr;
+  grid-template-columns: 0.3fr 1fr 0.45fr;
   vertical-align: top;
   grid-gap: 40px;
   padding: 0 25px 0 25px;
@@ -774,7 +774,7 @@ padding-right: calc(min(96px, 8vw));
   border: 0px;
   padding-top: 0px;
   grid-template-columns: 1fr;
-  grid-gap: 30px;
+  grid-gap: 25px;
 }
 
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card {
@@ -782,11 +782,11 @@ padding-right: calc(min(96px, 8vw));
   box-shadow: none;
   border-radius: 20px;
   place-items: center;
-  padding: 40px 30px 20px 30px;
+  padding: 30px 30px 15px 30px;
 }
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card-body{
   place-items: center;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 10px 0;
 
 }
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card:hover {
@@ -797,8 +797,8 @@ padding-right: calc(min(96px, 8vw));
 }
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-collection-card-cover{
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   background-color: #fff;
   border: 0px;
 }
@@ -813,14 +813,14 @@ padding-right: calc(min(96px, 8vw));
   font-weight: 600;
   letter-spacing: -0.01em;
   color: #fff;
-  line-height: 45px;
+  line-height: 30px;
   word-break: keep-all;
 }
 .notion-block-3aee5ae111324d76a994670879902f1e .notion-block-8f4cfcadc4fe44bfbc17abadab153f93 .notion-gallery-grid .notion-property-text {
-  font-size: 15px;
+  font-size: 14px;
   white-space: unset;
   font-weight: 200;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: #FFFFE9;
   line-height: 22px;
   word-break: keep-all;
