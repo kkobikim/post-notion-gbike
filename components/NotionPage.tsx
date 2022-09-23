@@ -14,13 +14,7 @@ import TweetEmbed from 'react-tweet-embed'
 import { NotionRenderer } from 'react-notion-x'
 
 // utils
-import {
-  getBlockTitle,
-  getPageProperty,
-  formatDate,
-  parsePageId,
-  normalizeTitle
-} from 'notion-utils'
+import { getBlockTitle, getPageProperty, formatDate } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapImageUrl } from 'lib/map-image-url'
 import { searchNotion } from 'lib/search-notion'
@@ -35,7 +29,6 @@ import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
-import { GitHubShareButton } from './GitHubShareButton'
 
 import styles from './styles.module.css'
 
@@ -87,6 +80,15 @@ const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then(
     (m) => m.Collection
   )
+)
+const Equation = dynamic(() =>
+  import('react-notion-x/build/third-party/equation').then((m) => m.Equation)
+)
+const Pdf = dynamic(
+  () => import('react-notion-x/build/third-party/pdf').then((m) => m.Pdf),
+  {
+    ssr: false
+  }
 )
 const Modal = dynamic(
   () =>
@@ -144,35 +146,11 @@ const propertyTextValue = (
   return defaultFn()
 }
 
-const propertySelectValue = (
-  { schema, value, key, pageHeader },
-  defaultFn: () => React.ReactNode
-) => {
-  value = normalizeTitle(value)
-
-  if (pageHeader && schema.type === 'multi_select' && value) {
-    return (
-      <Link href={`/tags/${value}`} key={key}>
-        <a>{defaultFn()}</a>
-      </Link>
-    )
-  }
-
-  return defaultFn()
-}
-
-const HeroHeader = dynamic<{ className?: string }>(
-  () => import('./HeroHeader').then((m) => m.HeroHeader),
-  { ssr: false }
-)
-
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,
   error,
-  pageId,
-  tagsPage,
-  propertyToFilterName
+  pageId
 }) => {
   const router = useRouter()
   const lite = useSearchParam('lite')
@@ -183,13 +161,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
       nextLink: Link,
       Code,
       Collection,
+      Equation,
+      Pdf,
       Modal,
       Tweet,
       Header: NotionPageHeader,
       propertyLastEditedTimeValue,
       propertyTextValue,
-      propertyDateValue,
-      propertySelectValue
+      propertyDateValue
     }),
     []
   )
@@ -214,8 +193,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
-  const isBioPage =
-    parsePageId(block?.id) === parsePageId('8d0062776d0c4afca96eb1ace93a7538')
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
@@ -229,16 +206,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
-  const pageCover = React.useMemo(() => {
-    if (isBioPage) {
-      return (
-        <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
-      )
-    } else {
-      return null
-    }
-  }, [isBioPage])
-
   if (router.isFallback) {
     return <Loading />
   }
@@ -247,9 +214,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     return <Page404 site={site} pageId={pageId} error={error} />
   }
 
-  const name = getBlockTitle(block, recordMap) || site.name
-  const title =
-    tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
+  const title = getBlockTitle(block, recordMap) || site.name
 
   console.log('notion page', {
     isDev: config.isDev,
@@ -298,8 +263,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
-          pageId === site.rootNotionPageId && 'index-page',
-          tagsPage && 'tags-page'
+          pageId === site.rootNotionPageId && 'index-page'
         )}
         darkMode={isDarkMode}
         components={components}
@@ -314,17 +278,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
         defaultPageIcon={config.defaultPageIcon}
         defaultPageCover={config.defaultPageCover}
         defaultPageCoverPosition={config.defaultPageCoverPosition}
-        linkTableTitleProperties={false}
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
-        pageTitle={tagsPage && propertyToFilterName ? title : undefined}
-        pageCover={pageCover}
       />
 
-      <GitHubShareButton />
     </>
   )
 }
