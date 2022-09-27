@@ -41,8 +41,7 @@ export default siteConfig({
   //
   pageUrlOverrides: {
     '/collect': '3aee5ae111324d76a994670879902f1e',
-    '/gstory': '0adf0895b584482688e8d81e415d902b',
-    '/wstory': '373a8997cfa041059b1aad9150e701ef'
+    '/gstory': '0adf0895b584482688e8d81e415d902b'
   },
   // pageUrlOverrides: null,
 
@@ -58,10 +57,6 @@ export default siteConfig({
     {
       title: '지쿠터 이야기',
       pageId: '0adf0895b584482688e8d81e415d902b'
-    },
-    {
-      title: '세상 이야기',
-      pageId: '373a8997cfa041059b1aad9150e701ef'
     }
   ]
 })
